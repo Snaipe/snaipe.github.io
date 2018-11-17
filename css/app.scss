@@ -100,6 +100,21 @@ a:hover {
 .right  { text-align: right;  }
 .left   { text-align: left;   }
 
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-left {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-right {
+  display: flex;
+  justify-content: center;
+}
+
 #logo {
   display: inline-block;
   font-size: 10em;
@@ -130,28 +145,24 @@ body > footer {
   margin: 20px auto;
 }
 
-dl {
+nav > dl {
   display: grid;
   grid-template-columns: max-content auto;
+  max-width: 1200px;
 }
 
-dl dt {
+nav > dl dt {
   grid-column-start: 1;
 }
 
-dl dd:before {
+nav > dl dd:before {
   content: '-- ';
 }
 
-dl dd {
+nav > dl dd {
   grid-column-start: 2;
   text-indent: calc(-3*(1ch + #{$letter-spacing}));
   padding-left: calc(3*(1ch + #{$letter-spacing}));
-}
-
-.tag-center {
-  display: flex;
-  justify-content: center;
 }
 
 /*
@@ -165,52 +176,6 @@ figure {
 code, pre {
   font-family: $code-font-family;
   font-size: 12px;
-}
-
-code .lineno {
-  padding-right: 10px;
-}
-
-.highlight > pre {
-  padding: 15px;
-  margin: 0;
-}
-
-.highlight > pre > code {
-  display: block;
-  overflow-x: auto;
-  margin: 0;
-}
-
-.highlight > pre > code > table {
-  width: 100%;
-  table-layout: fixed;
-  overflow-x: initial;
-}
-
-.highlight > pre > code > table .gutter {
-  width: 3em;
-}
-
-.highlight > pre > code td.code {
-  padding: 0;
-}
-
-.highlight > pre > code td > pre {
-  margin: 0;
-}
-
-.highlight > pre > code td.code > pre {
-  overflow-x: auto;
-}
-
-.highlight {
-  color: #d0d0d0;
-  background-color: #272822;
-  border: 1px solid #dbdbdb;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 
 @import 'highlight';
@@ -276,7 +241,7 @@ code .lineno {
 
 #post-list {
   grid-template-columns: auto max-content;
-  grid-row-gap: 15px;
+  grid-row-gap: 10px;
 }
 
 #post-list > dd {
