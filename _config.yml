@@ -1,7 +1,6 @@
-title: Diacritic
+title: snai.pe
 tagline: ""
-url: "https://snai.pe" # The base hostname & protocol for your site. Use it if you need absolute URL's
-permalink: /blog/:title.html
+url: "https://snai.pe"
 
 github: Snaipe
 
@@ -12,9 +11,13 @@ defaults:
       type: "posts"
     values:
       layout: "article"
+      permalink: /posts/:title
+
+plugins:
+  - jekyll-redirect-from
 
 sass:
   sass_dir: css/
   style: :compressed
 
-exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+exclude: [.sass-cache, .git, README.md, CNAME]

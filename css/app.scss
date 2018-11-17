@@ -14,6 +14,7 @@ $font-size: 16px;
 $font-family: 'Source Sans Pro', sans-serif;
 $code-font-family: 'Droid Sans Mono', monospace;
 $code-font-family-alt: 'Space Mono', monospace;
+$letter-spacing: 2px;
 $font-color: #353535;
 
 @import 'mixins';
@@ -77,12 +78,12 @@ body {
   background-color: $dark;
   color: $green;
   font-family: $code-font-family-alt;
-  letter-spacing: 2px;
+  letter-spacing: $letter-spacing;
 }
 
 a, a:visited {
   color: $green;
-  text-decoration-style: dotted;
+  text-decoration: none;
   @include transition('color 0.15s');
 }
 
@@ -127,6 +128,30 @@ body > footer {
   text-align: center;
   color: #8f908a;
   margin: 20px auto;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+dl dt {
+  grid-column-start: 1;
+}
+
+dl dd:before {
+  content: '-- ';
+}
+
+dl dd {
+  grid-column-start: 2;
+  text-indent: calc(-3*(1ch + #{$letter-spacing}));
+  padding-left: calc(3*(1ch + #{$letter-spacing}));
+}
+
+.tag-center {
+  display: flex;
+  justify-content: center;
 }
 
 /*
@@ -234,6 +259,14 @@ code .lineno {
   padding: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+  #article #content,
+  #page #content {
+    margin: 0 10px;
+    padding: 10px;
+  }
+}
+
 #article #content {
   margin: 0 auto;
   max-width: 850px;
@@ -241,10 +274,25 @@ code .lineno {
   text-align: justify;
 }
 
-.post-list {
+#post-list {
+  grid-template-columns: auto max-content;
+  grid-row-gap: 15px;
+}
+
+#post-list > dd {
+  justify-self: end;
+}
+
+@media only screen and (max-width: 600px) {
+  #post-list > dd {
+    display: none;
+  }
+}
+/*.post-list {
   display: table;
   padding: 0;
   width: 100%;
+  border-spacing: 15px;
 }
 
 .post-list > li {
@@ -261,7 +309,7 @@ code .lineno {
 .post-list > li :nth-child(2) {
   width: 16em;
   text-align: right;
-}
+}*/
 
 /* Article */
 
@@ -288,6 +336,25 @@ code .lineno {
 /*
  * Page-specific
  */
+
+/* index.html */
+
+#main-nav {
+  margin: 0 40px;
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#main-nav li {
+  display: inline;
+}
+
+#main-nav li + li:before {
+  content: ' · ';
+}
 
 /* 404.html */
 

@@ -1,28 +1,14 @@
 ---
-layout: post
-categories: [Python, Algorithm]
-tags: [
-  python,
-  algorithm,
-  pretty-print,
-  table,
-  tabular,
-  ascii,
-  proof-of-concept,
-  programming,
-  article,
-  coding,
-  code,
-]
-title: "[Python] A simple algorithm for drawing complex tables"
-share: true
-comments: true
+categories: [python, algorithm]
+title: "A simple algorithm for drawing complex tables"
+redirect_from:
+  - /python/algorithm/rendering-tables/
 ---
 
 I was surprised to see, during the development of [rst2ansi][rst2ansi], that there were no
 simple python modules to pretty-print complex tables with ascii characters.
 
-[rst2ansi]: https://github.com/Snaipe/python-rst2ansi
+[rst2ansi]: /git/python-rst2ansi
 
 Most of them only supported simple tables with uni-line cells, and God forbid you want
 to print cells that span multiple columns or rows.
@@ -800,5 +786,5 @@ This algorithm is simple enough for purposes where there are no border styles.
 For broader ones, one could either change this algorithm to make it overwrite
 previous borders, or use the guidelines as described in the [official w3c document on CSS2 properties of HTML tables][w3c-tables].
 
-[table2ascii]: https://github.com/Snaipe/table2ascii
+[table2ascii]: /git/table2ascii
 [w3c-tables]: http://www.w3.org/TR/CSS2/tables.html

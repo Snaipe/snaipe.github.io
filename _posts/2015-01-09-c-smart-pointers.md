@@ -1,10 +1,8 @@
 ---
-layout: post
-categories: [C]
-tags: [smart pointers, programming, C, article, howto, coding, code]
-title: "[C] Implementing smart pointers for the C programming language"
-share: true
-comments: true
+categories: [c]
+title: "Implementing smart pointers for the C programming language"
+redirect_from:
+  - /c/c-smart-pointers/
 ---
 
 I am a big fan of C, but some part of me always yearn to have *just

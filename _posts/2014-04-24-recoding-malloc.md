@@ -1,9 +1,8 @@
 ---
-layout: post
-categories: [C]
-tags: [programming, C, malloc, tutorial, article, howto, recoding, coding, recode, code]
-title: "[C] On the Quest of recoding malloc(3)"
-share: true
+categories: [c]
+title: "On the Quest of recoding malloc(3)"
+redirect_from:
+  - /c/recoding-malloc/
 ---
 
 Back when I did not know anything about programing and started to learn C, I was first introduced to pointers (and other dreaded horrors that made me curl into a corner and cry) and dynamic memory in general.

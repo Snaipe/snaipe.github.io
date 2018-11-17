@@ -1,5 +1,5 @@
                                         
-        D I A C R I T I C . I O         
+             S N A I . P E
                                         
                      +++                
                     ++=                 
@@ -21,4 +21,4 @@
                                         
   Made by Snaipe --- Powered by Jekyll  
                                         
-      with the help of sadkitt.er
+      with the help of pual.cool
