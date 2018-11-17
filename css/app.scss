@@ -288,28 +288,6 @@ code .lineno {
     display: none;
   }
 }
-/*.post-list {
-  display: table;
-  padding: 0;
-  width: 100%;
-  border-spacing: 15px;
-}
-
-.post-list > li {
-  display: table-row;
-  list-style-type: none;
-}
-
-.post-list > li > p {
-  display: table-cell;
-  margin: 0;
-  padding: 0 20px;
-}
-
-.post-list > li :nth-child(2) {
-  width: 16em;
-  text-align: right;
-}*/
 
 /* Article */
 
@@ -374,4 +352,8 @@ code .lineno {
   max-width: 800px;
   min-height: 120px;
   overflow: hidden;
+}
+
+#excerpt a {
+  text-decoration: dotted underline;
 }
