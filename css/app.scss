@@ -164,14 +164,25 @@ nav > dl dt {
   grid-column-start: 1;
 }
 
-nav > dl dd:before {
-  content: '-- ';
-}
-
 nav > dl dd {
   grid-column-start: 2;
-  text-indent: calc(-3*(1ch + #{$letter-spacing}));
-  padding-left: calc(3*(1ch + #{$letter-spacing}));
+}
+
+@media only screen and (min-width: 601px) {
+  nav > dl dd:before {
+    content: '-- ';
+  }
+
+  nav > dl dd {
+    text-indent: calc(-3*(1ch + #{$letter-spacing}));
+    padding-left: calc(3*(1ch + #{$letter-spacing}));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav > dl {
+    display: initial;
+  }
 }
 
 /*
