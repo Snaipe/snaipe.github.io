@@ -123,6 +123,15 @@ a:hover {
   max-width: 150px;
 }
 
+a > #logo {
+  @include transition('color 0.05s');
+}
+
+a > #logo:hover {
+  color: $pink;
+  @include transition('color 0.05s');
+}
+
 #logo-subtitle {
   margin-top: -2.5em;
 }
