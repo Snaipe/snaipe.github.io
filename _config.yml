@@ -15,6 +15,7 @@ defaults:
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 sass:
   sass_dir: css/
