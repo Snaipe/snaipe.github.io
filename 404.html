@@ -5,19 +5,7 @@ excerpt: Turn around -- for there is nothing for you here.
 permalink: /404
 ---
 
-<script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/typed.min.js"></script>
-
-<script>
-  $(function(){
-      $('#excerpt span').typed({
-        stringsElement: $('#strings'),
-        typeSpeed: 20,
-        backDelay: 1500,
-        backSpeed: -300
-      });
-  });
-</script>
 
 <section class="center" id="content">
   <a href="/"><h1 class="glitch symbol" id="logo" data-text="🝰">🝰</h1></a>
@@ -52,3 +40,12 @@ permalink: /404
   </span>
   <div id="excerpt"><span class="code"></span></div>
 </section>
+
+<script>
+  new Typed('#excerpt span', {
+    stringsElement: '#strings',
+    typeSpeed: 40,
+    backDelay: 1500,
+    backSpeed: -300
+  });
+</script>
