@@ -1,5 +1,4 @@
 ---
-categories: [python, algorithm]
 title: "A simple algorithm for drawing complex tables"
 redirect_from:
   - /python/algorithm/rendering-tables/

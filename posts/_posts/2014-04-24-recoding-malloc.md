@@ -1,5 +1,4 @@
 ---
-categories: [c]
 title: "On the Quest of recoding malloc(3)"
 redirect_from:
   - /c/recoding-malloc/

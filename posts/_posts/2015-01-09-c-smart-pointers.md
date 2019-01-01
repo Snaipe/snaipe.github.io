@@ -1,5 +1,4 @@
 ---
-categories: [c]
 title: "Implementing smart pointers for the C programming language"
 redirect_from:
   - /c/c-smart-pointers/

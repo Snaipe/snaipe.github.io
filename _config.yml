@@ -11,7 +11,7 @@ defaults:
       type: "posts"
     values:
       layout: "article"
-      permalink: /posts/:title
+      permalink: /:categories/:title
 
 plugins:
   - jekyll-redirect-from
