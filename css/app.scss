@@ -150,7 +150,7 @@ body > footer {
 nav > dl {
   display: grid;
   grid-template-columns: max-content auto;
-  max-width: 1200px;
+  width: 1200px;
 }
 
 nav > dl dt {
@@ -175,6 +175,10 @@ nav > dl dd {
 @media only screen and (max-width: 600px) {
   nav > dl {
     display: initial;
+  }
+
+  nav > dl dt {
+    margin-bottom: 7px;
   }
 }
 
