@@ -90,16 +90,16 @@ Let's allocate ourselves 100000 of them, and confirm that we have the right
 IDs allocated:
 
 {% highlight shell %}
-$ echo "$USER:1000000:1100000" | sudo tee -a /etc/sub{u,g}id
+$ echo "$USER:1000000:100000" | sudo tee -a /etc/sub{u,g}id
 $ grep $USER -H /etc/sub{u,g}id
-/etc/subuid:snaipe:1000000:1100000
-/etc/subgid:snaipe:1000000:1100000
+/etc/subuid:snaipe:1000000:100000
+/etc/subgid:snaipe:1000000:100000
 $ bst cat /proc/self/uid_map
          0       1000          1
-         1    1000000    1100000
+         1    1000000     100000
 $ bst cat /proc/self/gid_map
          0       1000          1
-         1    1000000    1100000
+         1    1000000     100000
 {% endhighlight %}
 
 We can indeed see that our current UID (1000) is mapped to UID 0, while UIDs
